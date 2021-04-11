@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <!--Bootstrap-->
+    <!--강의대로 하면 적용이 안됨...cdn으로 하기-->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+      .row div, .row-fluid div{
+        background-color: gray;
+        color: white;
+      }
+    </style>
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-4">
+          col-md-4관련 내용 - 한 row안에서 4칸만큼의 크기를 차지함
+        </div>
+
+        <div class="col-md-8">
+          col-md-8관련 내용 - 한 row안에서 8칸만큼의 크기를 차지함
+          (만약에 4칸짜리 column을 쓰고 4칸짜리 빈칸을 만들고 싶으면 col-md-4 col-md-offset-4쓰면 됨)
+          <div class="row-fluid">
+            <div class="col-md-4">
+              8칸짜리 하위에 쓰는 4칸짜리 column. nesting column 예시
+            </div>
+            <div class="col-md-4">
+              8칸짜리 하위에 쓰는 4칸짜리 column. nesting column 예시
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
